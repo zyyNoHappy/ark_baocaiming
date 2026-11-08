@@ -156,7 +156,7 @@ shots/*.png ──plate.crop_cards──▶ 卡片矩形
 - **日期印**：整组缩放 0.63 贴进 `DATE_TARGET=(1666,1250,2128,1314)`，用固定 `DATE_REF` 保证模板与帧对齐。
 - **两段式**：先 `build_notebook_template()` 出底图+塔+日期框，再对每帧只贴名片/卡面/日期数字，避免每帧重算版式。
 
-实测冻结参数（12 人）：
+实测冻结参数：
 
 ```
 卡 232×442   名片条 326×102   最低边 1240
@@ -293,7 +293,7 @@ NB.compose_notebook(entries, out, 模板路径, 日期, 字体, 'cover', chrome=
 | 文件 | 是否随仓库 | 说明 |
 |---|---|---|
 | `assets/order.csv` | ✅ | 141 个六星的名字与实装日期，纯文本 |
-| `assets/placeholder.png` | ✅ | 默认占位卡（灰底 + 十字），自制图 |
+| `assets/placeholder.png` | ✅ | 默认占位卡（灰底 + 十字） |
 | `assets/bg_scene.png` | ❌ | 视频底图，含游戏原画 |
 | `assets/bg.png` / `bg_blank.png` | ❌ | 同上 |
 | `assets/date_font.ttf` | ❌ | 商业字体，不可再分发 |
