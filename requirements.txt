@@ -1,0 +1,8 @@
+pillow>=9.0
+numpy>=1.23
+
+# 认干员名需要下面两个（体积较大，含 paddle 推理运行时）。
+# 不装也能切图，但 tools/ingest.py 会在识别第一步抛 RuntimeError("paddleocr 不可用")，
+# 这时只能自己往 data/overrides.json 里填名字。
+paddleocr>=3.0
+paddlepaddle>=3.0
